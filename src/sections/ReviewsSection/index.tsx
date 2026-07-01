@@ -42,9 +42,9 @@ export const ReviewsSection = () => {
         )}
         <div className="text-center md:text-left mt-8">
           {TOTAL_REVIEW_COUNT > 0 ? (
-            <a href="/reviews" className="text-[#16a34a] hover:underline font-semibold text-base">View all reviews →</a>
+            <a href="/reviews" className="text-[#2563eb] hover:underline font-semibold text-base">View all reviews →</a>
           ) : (
-            <a href={business.facebookUrl} target="_blank" rel="noopener noreferrer" className="text-[#16a34a] hover:underline font-semibold text-base">Follow us on Facebook →</a>
+            <a href={business.facebookUrl} target="_blank" rel="noopener noreferrer" className="text-[#2563eb] hover:underline font-semibold text-base">Follow us on Facebook →</a>
           )}
         </div>
       </div>

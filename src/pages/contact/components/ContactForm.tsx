@@ -149,7 +149,7 @@ export const ContactForm = () => {
       <input
         type="submit"
         value="Submit"
-        className="text-white text-base font-bold bg-[#15803d] box-border caret-transparent leading-[24px] text-center text-nowrap w-full border-2 border-[#15803d] px-6 py-3 rounded-[50px] border-solid md:text-xl md:leading-[28px] md:px-8 md:py-4 hover:bg-[#16a34a] hover:border-[#16a34a] transition-all duration-300 min-h-[56px] md:min-h-[64px] shadow-lg"
+        className="text-white text-base font-bold bg-[#1d4ed8] box-border caret-transparent leading-[24px] text-center text-nowrap w-full border-2 border-[#1d4ed8] px-6 py-3 rounded-[50px] border-solid md:text-xl md:leading-[28px] md:px-8 md:py-4 hover:bg-[#2563eb] hover:border-[#2563eb] transition-all duration-300 min-h-[56px] md:min-h-[64px] shadow-lg"
       />
     </form>
   );

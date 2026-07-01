@@ -45,16 +45,16 @@ const breadcrumbSchema = {
     <main>
       <section class="box-border caret-transparent pt-[160px] pb-[70px] md:pt-[220px] md:pb-[100px]">
         <div class="box-border caret-transparent max-w-[1204px] mx-auto px-5 md:px-8 text-center">
-          <p class="text-[#16a34a] text-sm font-semibold uppercase tracking-[0.18em] mb-4">All Services</p>
+          <p class="text-[#2563eb] text-sm font-semibold uppercase tracking-[0.18em] mb-4">All Services</p>
           <h1 class="text-white text-[34px] font-bold box-border caret-transparent leading-[44px] mb-5 md:text-[64px] md:leading-[78px]">
-            Steel Building Services in <span class="text-[#16a34a]">{cities}</span>
+            Steel Building Services in <span class="text-[#2563eb]">{cities}</span>
           </h1>
           <p class="text-slate-200 box-border caret-transparent max-w-[780px] mx-auto mb-8">
-            Find the service you need below or call {brand} on <TrackedTelLink client:load showPhoneNumber className="text-[#16a34a] hover:underline font-semibold" trackingLocation="services" />. We handle {serviceList} across {business.region}.
+            Find the service you need below or call {brand} on <TrackedTelLink client:load showPhoneNumber className="text-[#2563eb] hover:underline font-semibold" trackingLocation="services" />. We handle {serviceList} across {business.region}.
           </p>
           <TrackedTelLink
             client:load
-            className="text-white text-base bg-[#15803d] box-border caret-transparent leading-[22px] text-center font-bold border border-[#15803d] px-8 py-4 rounded-[50px] border-solid md:text-lg hover:bg-[#16a34a] hover:border-[#16a34a] transition-colors inline-flex items-center justify-center gap-3"
+            className="text-white text-base bg-[#1d4ed8] box-border caret-transparent leading-[22px] text-center font-bold border border-[#1d4ed8] px-8 py-4 rounded-[50px] border-solid md:text-lg hover:bg-[#2563eb] hover:border-[#2563eb] transition-colors inline-flex items-center justify-center gap-3"
             trackingLocation="services"
           >
             Call Now
@@ -69,15 +69,15 @@ const breadcrumbSchema = {
             return (
               <div>
                 <h2 class="text-white text-2xl font-bold mb-2 md:text-4xl">
-                  <a href={`/${category.slug}`} class="hover:text-[#16a34a] transition-colors">{category.name}</a>
+                  <a href={`/${category.slug}`} class="hover:text-[#2563eb] transition-colors">{category.name}</a>
                 </h2>
                 <p class="text-slate-300 mb-6 max-w-[720px]">{category.description}</p>
                 <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
                   {categoryServices.map((service) => (
-                    <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#16a34a] transition-colors block">
+                    <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#2563eb] transition-colors block">
                       <h3 class="text-white text-lg font-bold mb-2">{service.title}</h3>
                       <p class="text-slate-300 text-sm mb-4">{service.cardDescription}</p>
-                      <span class="text-[#16a34a] text-sm font-semibold">Learn more →</span>
+                      <span class="text-[#2563eb] text-sm font-semibold">Learn more →</span>
                     </a>
                   ))}
                 </div>
@@ -89,16 +89,16 @@ const breadcrumbSchema = {
             <h2 class="text-white text-2xl font-bold mb-2 md:text-4xl">General Enquiries</h2>
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
               {services.filter((s) => s.slug === "free-quotes").map((service) => (
-                <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#16a34a] transition-colors block">
+                <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#2563eb] transition-colors block">
                   <h3 class="text-white text-lg font-bold mb-2">{service.title}</h3>
                   <p class="text-slate-300 text-sm mb-4">{service.cardDescription}</p>
-                  <span class="text-[#16a34a] text-sm font-semibold">Learn more →</span>
+                  <span class="text-[#2563eb] text-sm font-semibold">Learn more →</span>
                 </a>
               ))}
-              <a href="/contact" class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#16a34a] transition-colors block">
+              <a href="/contact" class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#2563eb] transition-colors block">
                 <h3 class="text-white text-lg font-bold mb-2">Contact Us</h3>
                 <p class="text-slate-300 text-sm mb-4">Not sure what you need? Call or message and we will help figure it out.</p>
-                <span class="text-[#16a34a] text-sm font-semibold">Get in touch →</span>
+                <span class="text-[#2563eb] text-sm font-semibold">Get in touch →</span>
               </a>
             </div>
           </div>

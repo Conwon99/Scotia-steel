@@ -22,13 +22,13 @@ export const NavbarContent = () => {
               iconAlt={`Call ${brand}`}
               showIcon={true}
               trackingLocation="nav"
-              className="text-white items-center box-border caret-transparent gap-x-1 flex justify-start max-w-full whitespace-nowrap hover:text-[#15803d] hover:decoration-transparent hover:border-[#15803d] relative z-0"
+              className="text-white items-center box-border caret-transparent gap-x-1 flex justify-start max-w-full whitespace-nowrap hover:text-[#1d4ed8] hover:decoration-transparent hover:border-[#1d4ed8] relative z-0"
               displayClassName="box-border caret-transparent text-lg font-medium md:text-xl md:font-semibold lg:text-2xl lg:font-semibold text-white hidden sm:block"
             />
             <a
               href="/contact"
               onClick={() => trackQuoteButton('nav')}
-              className="text-white items-center bg-[#15803d] box-border caret-transparent gap-x-1.5 flex text-center border px-3 py-1.5 rounded-[100px] border-solid border-transparent md:px-4 md:py-2 lg:px-5 lg:py-2.5 hover:bg-[#16a34a] hover:border-[#15803d] whitespace-nowrap flex-shrink-0 relative z-10 shadow-[0_0_20px_rgba(22,163,74,0.45),0_0_40px_rgba(22,163,74,0.25)] hover:shadow-[0_0_30px_rgba(22,163,74,0.6),0_0_60px_rgba(22,163,74,0.45)] transition-shadow duration-300"
+              className="text-white items-center bg-[#1d4ed8] box-border caret-transparent gap-x-1.5 flex text-center border px-3 py-1.5 rounded-[100px] border-solid border-transparent md:px-4 md:py-2 lg:px-5 lg:py-2.5 hover:bg-[#2563eb] hover:border-[#1d4ed8] whitespace-nowrap flex-shrink-0 relative z-10 shadow-[0_0_20px_rgba(37,99,235,0.45),0_0_40px_rgba(37,99,235,0.25)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6),0_0_60px_rgba(37,99,235,0.45)] transition-shadow duration-300"
             >
               <span className="text-xs font-bold md:text-sm lg:text-base text-white">Get a free quote</span>
               <img
@@ -46,7 +46,7 @@ export const NavbarContent = () => {
               showIcon={true}
               trackingLocation="nav-mobile"
               customLabel={`Call ${brand}`}
-              className="text-white items-center bg-[#15803d] box-border caret-transparent flex justify-center min-h-[44px] min-w-[44px] p-3 rounded-full hover:bg-[#16a34a] transition-colors duration-300"
+              className="text-white items-center bg-[#1d4ed8] box-border caret-transparent flex justify-center min-h-[44px] min-w-[44px] p-3 rounded-full hover:bg-[#2563eb] transition-colors duration-300"
               displayClassName="sr-only"
             />
           </div>

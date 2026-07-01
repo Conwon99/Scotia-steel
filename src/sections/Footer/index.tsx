@@ -34,7 +34,7 @@ export const Footer = () => {
                   href={business.facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#15803d] hover:decoration-transparent transition-colors duration-300"
+                  className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#1d4ed8] hover:decoration-transparent transition-colors duration-300"
                   aria-label={`${brand} on Facebook`}
                 >
                   <img
@@ -52,53 +52,53 @@ export const Footer = () => {
             <div className="text-white text-base font-semibold box-border caret-transparent mb-2">
               Quick Links
             </div>
-            <a href="/" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href="/" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               Home
             </a>
-            <a href="/services" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href="/services" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               Services
             </a>
-            <a href="/about" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href="/about" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               About
             </a>
-            <a href="/reviews" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href="/reviews" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               Reviews
             </a>
-            <a href="/contact" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href="/contact" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               Contact
             </a>
             <details className="group box-border caret-transparent mt-2">
-              <summary className="text-white text-sm font-semibold box-border caret-transparent cursor-pointer hover:text-[#16a34a]">
+              <summary className="text-white text-sm font-semibold box-border caret-transparent cursor-pointer hover:text-[#2563eb]">
                 Services
               </summary>
               <div className="box-border caret-transparent flex flex-col gap-y-2 mt-3 pl-3">
                 {categories.map((category) => (
-                  <a key={category.slug} href={`/${category.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+                  <a key={category.slug} href={`/${category.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
                     {category.name}
                   </a>
                 ))}
                 {topMatrixLinks.map((link) => (
-                  <a key={link.href} href={link.href} className="text-white/60 text-xs box-border caret-transparent hover:text-[#16a34a] pl-3 transition-colors duration-300">
+                  <a key={link.href} href={link.href} className="text-white/60 text-xs box-border caret-transparent hover:text-[#2563eb] pl-3 transition-colors duration-300">
                     {link.label}
                   </a>
                 ))}
                 {services.filter((s) => s.slug !== "free-quotes").map((service) => (
-                  <a key={service.slug} href={`/services/${service.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+                  <a key={service.slug} href={`/services/${service.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
                     {service.shortTitle}
                   </a>
                 ))}
               </div>
             </details>
             <details className="group box-border caret-transparent mt-2">
-              <summary className="text-white text-sm font-semibold box-border caret-transparent cursor-pointer hover:text-[#16a34a]">
+              <summary className="text-white text-sm font-semibold box-border caret-transparent cursor-pointer hover:text-[#2563eb]">
                 Locations
               </summary>
               <div className="box-border caret-transparent flex flex-col gap-y-2 mt-3 pl-3 max-h-48 overflow-y-auto">
-                <a href="/locations" className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300 font-medium">
+                <a href="/locations" className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300 font-medium">
                   All Locations
                 </a>
                 {locations.map((location) => (
-                  <a key={location.slug} href={`/locations/${location.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+                  <a key={location.slug} href={`/locations/${location.slug}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
                     {location.name}
                   </a>
                 ))}
@@ -113,9 +113,9 @@ export const Footer = () => {
             <PhoneLink
               variant="footer"
               showIcon={false}
-              className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300"
+              className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300"
             />
-            <a href={`mailto:${business.email}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent transition-colors duration-300">
+            <a href={`mailto:${business.email}`} className="text-white/80 text-sm box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent transition-colors duration-300">
               {business.email}
             </a>
           </div>
@@ -148,7 +148,7 @@ export const Footer = () => {
                 href={business.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/80 text-xs box-border caret-transparent hover:text-[#16a34a] hover:decoration-transparent underline transition-colors duration-300"
+                className="text-white/80 text-xs box-border caret-transparent hover:text-[#2563eb] hover:decoration-transparent underline transition-colors duration-300"
               >
                 View {brand} on Google Maps
               </a>

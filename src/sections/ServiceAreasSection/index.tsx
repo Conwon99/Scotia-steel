@@ -21,7 +21,7 @@ export const ServiceAreasSection = () => {
           </h2>
           <p className="text-[15px] text-neutral-700 leading-6 md:text-base max-w-[700px]">
             {brand} provides {serviceList} across {citiesLabel()} and {business.region}. Select your area below or{" "}
-            <a href="/locations" className="text-[#16a34a] hover:underline font-medium">
+            <a href="/locations" className="text-[#2563eb] hover:underline font-medium">
               view all service areas
             </a>
             . Get in touch to confirm coverage and book a free quote.
@@ -52,7 +52,7 @@ export const ServiceAreasSection = () => {
                       <span className="text-neutral-800" aria-hidden>
                         •
                       </span>
-                      <a href={`/locations/${location.slug}`} className="text-neutral-700 hover:text-[#16a34a] hover:underline">
+                      <a href={`/locations/${location.slug}`} className="text-neutral-700 hover:text-[#2563eb] hover:underline">
                         {location.name}
                       </a>
                     </li>

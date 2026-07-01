@@ -153,7 +153,9 @@ export const homepageDescription = () =>
     `${business.alternateName} — steel building suppliers and contractors across ${citiesLabel()}. Industrial, agricultural and commercial builds. Free quotes.`,
   );
 
-export const homepageH1 = () => `Steel Building Suppliers & Contractors in ${citiesLabel()}`;
+export const homepageH1Prefix = () => `Steel Building Suppliers & Contractors in`;
+
+export const homepageH1 = () => `${homepageH1Prefix()} ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
   `steel buildings ${business.primaryCity}, steel building suppliers, steel building contractors ${business.secondaryCity}, ${business.alternateName}, free quote`;

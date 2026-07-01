@@ -9,7 +9,7 @@ export const ReviewCard = (props: ReviewCardProps) => {
     <div className="bg-gray-800 box-border caret-transparent flex flex-col gap-y-4 max-w-full overflow-hidden p-5 rounded-[20px] md:p-[30px] md:gap-y-5">
       <div className="box-border caret-transparent">
         {props.isRecommendation && (
-          <div className="text-green-500 text-sm font-medium box-border caret-transparent mb-2 md:text-base">
+          <div className="text-blue-500 text-sm font-medium box-border caret-transparent mb-2 md:text-base">
             ★ Recommended
           </div>
         )}
@@ -24,7 +24,7 @@ export const ReviewCard = (props: ReviewCardProps) => {
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className="text-green-500 h-5 w-5"
+            className="text-blue-500 h-5 w-5"
             fill="currentColor"
             viewBox="0 0 20 20"
           >

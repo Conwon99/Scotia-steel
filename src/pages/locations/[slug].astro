@@ -74,13 +74,13 @@ const breadcrumbSchema = {
         <div class="relative bg-gray-900 bg-cover bg-center box-border caret-transparent mx-[15px] pt-[80px] pb-[90px] rounded-[20px] md:pt-[150px] md:pb-[180px] overflow-hidden" style={`background-image:url('${business.assets.hero}')`}>
           <div class="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/70 to-gray-900/90"></div>
           <div class="relative z-10 box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px] text-center">
-            <p class="text-[#16a34a] text-sm font-semibold uppercase tracking-[0.18em] mb-4">Service Area</p>
+            <p class="text-[#2563eb] text-sm font-semibold uppercase tracking-[0.18em] mb-4">Service Area</p>
             <h1 class="text-white text-[34px] font-bold box-border caret-transparent leading-[44px] mb-5 md:text-[64px] md:leading-[78px]">
-              Steel Buildings in <span class="text-[#16a34a]">{location.name}</span>
+              Steel Buildings in <span class="text-[#2563eb]">{location.name}</span>
             </h1>
             <p class="text-slate-200 box-border caret-transparent max-w-[780px] mx-auto">{location.intro}</p>
             <div class="box-border caret-transparent flex items-center justify-center mt-8">
-              <a href="/contact" class="text-white text-base bg-[#15803d] box-border caret-transparent leading-[22px] text-center font-bold border border-[#15803d] px-8 py-4 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[36px] md:py-5 hover:bg-[#16a34a] hover:border-[#16a34a] transition-colors inline-flex items-center justify-center gap-3">
+              <a href="/contact" class="text-white text-base bg-[#1d4ed8] box-border caret-transparent leading-[22px] text-center font-bold border border-[#1d4ed8] px-8 py-4 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[36px] md:py-5 hover:bg-[#2563eb] hover:border-[#2563eb] transition-colors inline-flex items-center justify-center gap-3">
                 <svg class="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                 Get a Free Quote
               </a>
@@ -102,7 +102,7 @@ const breadcrumbSchema = {
             <h3 class="text-gray-900 text-xl font-bold box-border caret-transparent mb-3">Services in {location.name}</h3>
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 mb-8">
               {categories.map((category) => (
-                <a href={getLocationServicePath(location.slug, category.slug)} class="text-[#16a34a] hover:underline font-medium">{category.name} in {location.name}</a>
+                <a href={getLocationServicePath(location.slug, category.slug)} class="text-[#2563eb] hover:underline font-medium">{category.name} in {location.name}</a>
               ))}
             </div>
 
@@ -110,7 +110,7 @@ const breadcrumbSchema = {
             <ul class="grid grid-cols-1 gap-2 pl-0 list-none md:grid-cols-2">
               {nearbyLinks.map((nearby) => (
                 <li>
-                  <a href={`/locations/${nearby.slug}`} class="text-[#16a34a] hover:underline">{nearby.name}</a>
+                  <a href={`/locations/${nearby.slug}`} class="text-[#2563eb] hover:underline">{nearby.name}</a>
                 </li>
               ))}
               {nearbyLinks.length === 0 && location.nearby.map((area) => (
