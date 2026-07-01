@@ -31,8 +31,8 @@ const serviceSchema = {
   url: canonical,
   provider: { "@id": `${siteRoot}#business` },
   areaServed: [
-    { "@type": "City", name: business.primaryCity },
-    { "@type": "City", name: business.secondaryCity },
+    { "@type": "AdministrativeArea", name: business.primaryCity },
+    { "@type": "AdministrativeArea", name: business.secondaryCity },
     { "@type": "AdministrativeArea", name: business.region },
   ],
 };

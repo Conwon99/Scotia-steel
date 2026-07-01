@@ -58,13 +58,15 @@ const businessSchema = {
     "@type": "OpeningHoursSpecification",
     ...hours,
   })),
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": String(TOTAL_REVIEW_COUNT),
-    "bestRating": "5",
-    "worstRating": "1"
-  },
+  ...(TOTAL_REVIEW_COUNT > 0 ? {
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": String(TOTAL_REVIEW_COUNT),
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  } : {}),
   ...(sampleReview ? {
     "review": [{
       "@type": "Review",

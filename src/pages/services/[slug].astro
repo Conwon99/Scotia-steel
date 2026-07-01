@@ -47,8 +47,8 @@ const serviceSchema = {
   image: absoluteImage,
   provider: { "@id": `${siteRoot}#business` },
   areaServed: [
-    { "@type": "City", name: business.primaryCity },
-    { "@type": "City", name: business.secondaryCity },
+    { "@type": "AdministrativeArea", name: business.primaryCity },
+    { "@type": "AdministrativeArea", name: business.secondaryCity },
     { "@type": "AdministrativeArea", name: business.region },
   ],
   offers: {
@@ -162,7 +162,7 @@ const breadcrumbSchema = {
                 </div>
                 <div class="box-border caret-transparent">
                   <h2 class="text-gray-900 text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
-                    {service.shortTitle} for {cities} homes
+                    {service.shortTitle} across {cities}
                   </h2>
                   <p class="box-border caret-transparent mb-2.5 text-gray-700">{service.localContext}</p>
                 </div>

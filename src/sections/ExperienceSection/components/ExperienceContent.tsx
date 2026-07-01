@@ -10,10 +10,10 @@ export const ExperienceContent = () => {
     <div className="box-border caret-transparent gap-x-[30px] flex flex-col justify-between gap-y-[30px] md:gap-x-[50px] md:gap-y-[50px]">
       <div className="box-border caret-transparent">
         <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[38px] mb-2.5 sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px]">
-          Need Your Garden Sorted?
+          Need a Steel Building?
         </h2>
         <p className="text-gray-200 text-sm sm:text-base box-border caret-transparent mt-2.5 mb-5 md:mt-5 md:mb-5 leading-relaxed">
-          {brand} helps homeowners across {cities} and {business.region} with grass cutting, hedge trimming, weed control and garden maintenance. Cheap, reliable and fast — call {business.phoneDisplay} for a free quote.
+          {brand} supplies and constructs industrial, agricultural and bespoke steel buildings across {cities} and nationwide across {business.region}. 16 years' experience — call {business.phoneDisplay} for a free quote.
         </p>
         <div className="box-border caret-transparent mb-5 md:mb-[50px]">
           <ul className="text-white text-sm sm:text-base md:text-lg box-border caret-transparent list-none pl-0 space-y-2 md:space-y-3">

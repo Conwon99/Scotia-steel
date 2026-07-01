@@ -23,7 +23,7 @@ export const Footer = () => {
               {brand}
             </div>
             <p className="text-white/80 text-sm box-border caret-transparent max-w-xs leading-relaxed">
-              Home service specialists serving {citiesLabel()} and {business.region}.
+              Steel building specialists serving {citiesLabel()} and {business.region}.
             </p>
             <div className="box-border caret-transparent flex flex-col gap-3 mt-2">
               <div className="text-white text-sm font-semibold box-border caret-transparent">

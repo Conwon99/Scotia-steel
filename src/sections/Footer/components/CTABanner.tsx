@@ -19,7 +19,7 @@ export const CTABanner = () => {
         </h2>
         <div className="items-start box-border caret-transparent gap-x-5 flex flex-col justify-between gap-y-5 text-left md:items-end md:text-right">
           <p className="box-border caret-transparent text-left mb-2.5 md:text-right">
-            Tell us about your fencing, tree care, landscaping or roof cleaning work and we will arrange a free quote.
+            Tell us about the steel building you need and we will arrange a free quote.
           </p>
           <a
             href="/contact"
