@@ -9,7 +9,7 @@ export const HeroButton = () => {
     <a
       href="/contact"
       onClick={handleClick}
-      className="text-white text-sm font-bold bg-[#15803d] box-border caret-transparent block leading-[19.6px] text-center border border-[#15803d] px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-[#16a34a] hover:decoration-transparent shadow-[0_0_20px_rgba(22,163,74,0.45),0_0_40px_rgba(22,163,74,0.25)] hover:shadow-[0_0_30px_rgba(22,163,74,0.6),0_0_60px_rgba(22,163,74,0.45)] transition-shadow duration-300"
+      className="text-white text-sm font-bold bg-[#1d4ed8] box-border caret-transparent block leading-[19.6px] text-center border border-[#1d4ed8] px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-[#2563eb] hover:decoration-transparent shadow-[0_0_20px_rgba(37,99,235,0.45),0_0_40px_rgba(37,99,235,0.25)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6),0_0_60px_rgba(37,99,235,0.45)] transition-shadow duration-300"
     >
       Get a free quote
     </a>

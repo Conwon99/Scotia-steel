@@ -8,7 +8,7 @@ export const ReviewStats = () => {
         className="box-border caret-transparent flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors hover:decoration-transparent"
       >
         <div className="box-border caret-transparent flex items-center gap-2">
-          <div className="text-green-500 text-2xl font-bold box-border caret-transparent">
+          <div className="text-blue-500 text-2xl font-bold box-border caret-transparent">
             ★★★★★
           </div>
         </div>
@@ -36,7 +36,7 @@ export const ReviewStats = () => {
         className="box-border caret-transparent flex items-center gap-3 p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors hover:decoration-transparent"
       >
         <div className="box-border caret-transparent flex items-center gap-2">
-          <div className="text-green-500 text-2xl font-bold box-border caret-transparent">
+          <div className="text-blue-500 text-2xl font-bold box-border caret-transparent">
             ★★★★★
           </div>
         </div>

@@ -71,7 +71,7 @@ const breadcrumbSchema = {
         <div class="relative bg-gray-900 bg-cover bg-center box-border caret-transparent mx-[15px] pt-[96px] pb-[120px] rounded-[20px] md:pt-[170px] md:pb-[200px] overflow-hidden" style={`background-image:url('${category.image}')`}>
           <div class="absolute inset-0 bg-gradient-to-b from-gray-900/55 via-gray-900/65 to-gray-900/90"></div>
           <div class="relative z-10 box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px] text-center">
-            <p class="text-[#16a34a] text-sm font-semibold uppercase tracking-[0.18em] mb-4">{category.name}</p>
+            <p class="text-[#2563eb] text-sm font-semibold uppercase tracking-[0.18em] mb-4">{category.name}</p>
             <h1 class="text-white text-[38px] font-bold box-border caret-transparent leading-[49.4px] mb-5 md:text-[68px] md:leading-[88.4px]">
               {category.title}
             </h1>
@@ -79,12 +79,12 @@ const breadcrumbSchema = {
             <div class="box-border caret-transparent flex flex-wrap items-center justify-center gap-4 mt-8">
               <TrackedTelLink
                 client:load
-                className="text-white text-base bg-[#15803d] box-border caret-transparent font-bold border border-[#15803d] px-8 py-4 rounded-[50px] hover:bg-[#16a34a] transition-colors"
+                className="text-white text-base bg-[#1d4ed8] box-border caret-transparent font-bold border border-[#1d4ed8] px-8 py-4 rounded-[50px] hover:bg-[#2563eb] transition-colors"
                 trackingLocation="category"
               >
                 Call Now
               </TrackedTelLink>
-              <a href="/contact" class="text-white text-base box-border caret-transparent font-bold border border-white/70 px-8 py-4 rounded-[50px] hover:bg-white hover:text-[#15803d] transition-colors">Get a Free Quote</a>
+              <a href="/contact" class="text-white text-base box-border caret-transparent font-bold border border-white/70 px-8 py-4 rounded-[50px] hover:bg-white hover:text-[#1d4ed8] transition-colors">Get a Free Quote</a>
             </div>
           </div>
         </div>
@@ -94,16 +94,16 @@ const breadcrumbSchema = {
         <div class="box-border caret-transparent max-w-[980px] mx-auto px-[15px] md:px-[30px]">
           <div class="bg-white rounded-[20px] p-6 md:p-10 mb-10">
             <p class="text-gray-700 leading-7 mb-6">{category.localParagraph}</p>
-            <p class="text-gray-700 leading-7">Browse our <a href="/services" class="text-[#16a34a] hover:underline font-medium">full services list</a> or contact {brand} for a free quote across {citiesLabel()} and surrounding areas.</p>
+            <p class="text-gray-700 leading-7">Browse our <a href="/services" class="text-[#2563eb] hover:underline font-medium">full services list</a> or contact {brand} for a free quote across {citiesLabel()} and surrounding areas.</p>
           </div>
 
           <h2 class="text-white text-2xl font-bold mb-6 md:text-4xl">{category.name} Services</h2>
           <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mb-10">
             {categoryServices.map((service) => (
-              <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#16a34a] transition-colors block">
+              <a href={`/services/${service.slug}`} class="rounded-xl bg-neutral-900/75 border border-white/10 p-6 hover:border-[#2563eb] transition-colors block">
                 <h3 class="text-white text-lg font-bold mb-2">{service.title}</h3>
                 <p class="text-slate-300 text-sm mb-4">{service.cardDescription}</p>
-                <span class="text-[#16a34a] text-sm font-semibold">Learn more →</span>
+                <span class="text-[#2563eb] text-sm font-semibold">Learn more →</span>
               </a>
             ))}
           </div>
@@ -111,7 +111,7 @@ const breadcrumbSchema = {
           <h2 class="text-white text-2xl font-bold mb-6 md:text-4xl">{category.name} by Area</h2>
           <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 mb-10">
             {locations.map((location) => (
-              <a href={getLocationServicePath(location.slug, category.slug)} class="text-[#16a34a] hover:underline font-medium">{category.name} in {location.name}</a>
+              <a href={getLocationServicePath(location.slug, category.slug)} class="text-[#2563eb] hover:underline font-medium">{category.name} in {location.name}</a>
             ))}
           </div>
         </div>

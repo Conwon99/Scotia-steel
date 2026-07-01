@@ -37,10 +37,10 @@ export const PhoneLink = ({
   };
 
   const defaultClasses = variant === "hero" 
-    ? "text-white items-center box-border caret-transparent gap-x-2 flex max-w-full gap-y-2 overflow-hidden hover:text-green-500 min-h-[44px] touch-manipulation"
+    ? "text-white items-center box-border caret-transparent gap-x-2 flex max-w-full gap-y-2 overflow-hidden hover:text-blue-500 min-h-[44px] touch-manipulation"
     : variant === "footer"
     ? "text-white/80 text-sm box-border caret-transparent hover:text-white hover:decoration-transparent"
-    : "text-white box-border caret-transparent flex justify-center max-w-full text-center md:text-white hover:text-green-500 hover:border-green-500";
+    : "text-white box-border caret-transparent flex justify-center max-w-full text-center md:text-white hover:text-blue-500 hover:border-blue-500";
 
   const defaultDisplayClasses = variant === "hero"
     ? "text-white text-base font-medium box-border caret-transparent leading-6 sm:text-lg sm:leading-7 md:text-xl lg:text-2xl"

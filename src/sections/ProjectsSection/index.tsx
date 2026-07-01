@@ -48,7 +48,7 @@ export const ProjectsSection = () => {
         <div className="box-border mt-8 text-center">
           <a
             href="/contact"
-            className="inline-flex items-center justify-center text-white bg-[#16a34a] border border-transparent px-6 py-4 rounded-[100px] hover:bg-white hover:text-black hover:border-[#16a34a] transition"
+            className="inline-flex items-center justify-center text-white bg-[#2563eb] border border-transparent px-6 py-4 rounded-[100px] hover:bg-white hover:text-black hover:border-[#2563eb] transition"
           >
             Get a Free Quote
           </a>

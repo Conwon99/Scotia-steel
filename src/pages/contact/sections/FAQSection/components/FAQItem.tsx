@@ -17,13 +17,13 @@ export const FAQItem = (props: FAQItemProps) => {
         aria-controls={`faq-answer-${props.question.replace(/\s+/g, '-').toLowerCase()}`}
       >
         <h3
-          className={`font-bold box-border caret-transparent md:text-[22px] md:leading-[28.6px] ${isOpen ? "text-[#15803d] text-lg leading-[23.4px]" : "text-white text-xl leading-[26px]"}`}
+          className={`font-bold box-border caret-transparent md:text-[22px] md:leading-[28.6px] ${isOpen ? "text-[#1d4ed8] text-lg leading-[23.4px]" : "text-white text-xl leading-[26px]"}`}
           itemProp="name"
         >
           {props.question}
         </h3>
         <div
-          className={`items-center box-border caret-transparent flex shrink-0 justify-center min-h-5 w-5 mt-1 rounded-[50%] md:min-h-6 md:w-6 md:mt-0 ${isOpen ? "bg-[#15803d]" : "bg-gray-600"}`}
+          className={`items-center box-border caret-transparent flex shrink-0 justify-center min-h-5 w-5 mt-1 rounded-[50%] md:min-h-6 md:w-6 md:mt-0 ${isOpen ? "bg-[#1d4ed8]" : "bg-gray-600"}`}
           aria-hidden="true"
         >
           <div className="relative items-center box-border caret-transparent flex shrink-0 justify-center min-h-3.5 w-3.5">

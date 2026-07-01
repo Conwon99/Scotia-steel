@@ -47,7 +47,7 @@ export const RatingDisplay = () => {
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="box-border caret-transparent h-4 w-4 md:h-5 md:w-5 text-[#16a34a]"
+                  className="box-border caret-transparent h-4 w-4 md:h-5 md:w-5 text-[#2563eb]"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

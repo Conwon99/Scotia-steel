@@ -27,9 +27,9 @@ export function ServiceAreaMap() {
         .addTo(map);
 
       const polygon = L.default.polygon(business.serviceAreaPolygon, {
-        color: "#16a34a",
+        color: "#2563eb",
         weight: 2,
-        fillColor: "#16a34a",
+        fillColor: "#2563eb",
         fillOpacity: 0.2,
       }).addTo(map);
 
