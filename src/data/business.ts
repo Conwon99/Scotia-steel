@@ -146,14 +146,14 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Steel Building Suppliers & Contractors in ${citiesLabel()}`;
+  `${business.alternateName} | Trusted Steel Building Suppliers & Contractors in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
     `${business.alternateName} — steel building suppliers and contractors across ${citiesLabel()}. Industrial, agricultural and commercial builds. Free quotes.`,
   );
 
-export const homepageH1Prefix = () => `Steel Building Suppliers & Contractors in`;
+export const homepageH1Prefix = () => `Trusted Steel Building Suppliers & Contractors in`;
 
 export const homepageH1 = () => `${homepageH1Prefix()} ${citiesLabel()}`;
 
