@@ -1,13 +1,13 @@
-import { business, brandName, homepageH1Prefix, citiesLabel } from "@/data/business";
+import { business, brandName, homepageH1Prefix } from "@/data/business";
 
 export const HeroText = () => {
   return (
     <>
       <h1 className="text-white text-[28px] font-bold box-border caret-transparent leading-[36px] mb-3 md:text-[68px] md:leading-[88.4px]">
-        {homepageH1Prefix()} <span className="text-[#2563eb]">{citiesLabel()}</span>
+        {homepageH1Prefix()} <span className="text-[#2563eb]">{business.primaryCity}</span>
       </h1>
       <p className="text-slate-200 text-[15px] leading-7 box-border caret-transparent max-w-full mx-auto md:max-w-[70%] mb-4 md:mb-8">
-        {business.tagline} {brandName()} handles the jobs you have been putting off across {business.primaryCity}, {business.secondaryCity} and {business.region}.
+        {business.tagline} {brandName()} handles the jobs you have been putting off across {business.primaryCity} and {business.region}.
       </p>
     </>
   );
