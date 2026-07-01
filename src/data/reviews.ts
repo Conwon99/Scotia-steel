@@ -1,5 +1,9 @@
-/** Total reviews — MUST match visible review count on site (schema + reviews page). */
-export const TOTAL_REVIEW_COUNT = 3;
+/**
+ * Total reviews — MUST match visible review count on site (schema + reviews page).
+ * No reviews are available from the Facebook scrape for this business (0 reviews / not yet rated),
+ * so this is intentionally empty rather than filled with fabricated testimonials.
+ */
+export const TOTAL_REVIEW_COUNT = 0;
 
 export type CustomerReview = {
   name: string;
@@ -10,29 +14,4 @@ export type CustomerReview = {
   text: string;
 };
 
-export const reviews: CustomerReview[] = [
-  {
-    name: "Iain Donald",
-    meta: "Facebook review",
-    time: "recommended",
-    initial: "I",
-    initialBg: "bg-green-600",
-    text: "Our grass hadn't been cut for 2 months, messaged them and they were out within the hour. Top quality. Would definitely recommend them if anyone is looking for their grass to be done.",
-  },
-  {
-    name: "Sharon Wallace",
-    meta: "Facebook review",
-    time: "recommended",
-    initial: "S",
-    initialBg: "bg-emerald-500",
-    text: "2nd time I've had front and back garden done, highly recommend, great job, 10/10.",
-  },
-  {
-    name: "Nic Coutts",
-    meta: "Facebook review",
-    time: "recommended",
-    initial: "N",
-    initialBg: "bg-lime-600",
-    text: "First time using Landscaping Ltd, front and back garden got cut, done a great job, will be using this company from now on. Friendly couple, fast and efficient service provided.",
-  },
-];
+export const reviews: CustomerReview[] = [];

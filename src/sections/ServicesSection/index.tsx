@@ -14,7 +14,7 @@ export const ServicesSection = () => {
             Our Services
           </h2>
           <p className="text-gray-200 max-w-3xl mx-auto mt-4">
-            Reliable grass cutting, hedge trimming and garden maintenance across {cities} and nearby areas from {brand}.
+            Reliable steel building supply and construction across {cities} and nationwide from {brand}.
           </p>
         </div>
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr_1fr]">

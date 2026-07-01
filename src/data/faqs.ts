@@ -11,19 +11,23 @@ const cities = citiesLabel();
 export const homepageFaqs: FaqItem[] = [
   {
     question: "Do you offer free quotes?",
-    answer: `Yes. Contact ${brand} by phone, message or WhatsApp with details of your garden and we can discuss a free, no-obligation quote.`,
+    answer: `Yes. Contact ${brand} by phone or message with details of your project and we aim to reply within 24 hours with a free quote.`,
   },
   {
     question: "What areas do you cover?",
-    answer: `${brand} serves ${cities} and surrounding areas in ${business.region}. If you are nearby, get in touch and we can confirm availability.`,
+    answer: `${brand} is based in ${cities} and travels nationwide across ${business.region}, from Scotland all the way down to Dover.`,
   },
   {
-    question: "What services do you offer?",
-    answer: `${brand} offers grass cutting, hedge trimming, weed control and de-weeding, general garden maintenance, and flat-pack furniture and shed assembly.`,
+    question: "What steel buildings do you supply?",
+    answer: `${brand} supplies and constructs industrial units, agricultural buildings, workshops, garages and storage buildings, along with cladding, purlins, fixing systems and aluminium roller doors.`,
   },
   {
     question: "How do I get started?",
-    answer: `Call ${brand}, pop us a message on Facebook or WhatsApp, or use the contact form with a brief description of the work and your location. Photos are helpful.`,
+    answer: `Call ${brand}, message us on Facebook, or use the contact form with a brief description of your project, its intended use and your location.`,
+  },
+  {
+    question: "How long does it take to get a steel building built?",
+    answer: "Buildings are typically manufactured and delivered to site in 4-6 working weeks from receipt of order and final approval of size and colour.",
   },
 ];
 

@@ -54,72 +54,73 @@ export type BusinessConfig = {
 };
 
 export const business: BusinessConfig = {
-  businessName: "Landscaping Ltd",
-  alternateName: "Landscaping Ltd",
-  tagline: "Reliable grass cutting, hedge trimming and garden maintenance with free, no-obligation quotes.",
-  gbpCategory: "Landscape Company",
+  businessName: "Scotia Steel Construction",
+  alternateName: "Scotia Steel",
+  tagline: "16 years of experience supplying and constructing quality steel buildings across Scotland, Northern England and the UK.",
+  gbpCategory: "Steel Building Contractor",
 
-  phone: "+44 7935 499327",
-  phoneDisplay: "+44 7935 499327",
-  phoneLocal: "07935 499327",
+  phone: "+44 7799 170792",
+  phoneDisplay: "+44 7799 170792",
+  phoneLocal: "07799 170792",
   trackingPhone: null,
   trackingPhoneLocal: null,
 
-  email: "hello@landscapingltd.co.uk",
-  siteUrl: "https://www.landscapingltdpaisley.co.uk",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61577154598414",
-  googleMapsUrl: "https://maps.google.com/maps?q=55.84197000%2C-4.42292000&hl=en",
-  whatsappUrl: "https://wa.me/447935499327",
+  email: "scotiasteel@outlook.com",
+  siteUrl: "https://www.scotiasteel.co.uk",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61560901300521",
+  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Scotia+Steel",
+  whatsappUrl: null,
 
-  primaryCity: "Paisley",
-  secondaryCity: "Glasgow",
-  region: "Renfrewshire",
+  primaryCity: "Scotland",
+  secondaryCity: "Northern England",
+  region: "the UK",
   geoRegion: "GB-SCT",
 
   address: {
-    addressLocality: "Paisley",
-    addressRegion: "Renfrewshire",
+    addressLocality: "Scotland",
+    addressRegion: "United Kingdom",
     addressCountry: "GB",
   },
 
-  mapCenter: [55.84197, -4.42292],
+  mapCenter: [56.4907, -4.2026],
   serviceAreaPolygon: [
-    [55.78, -4.65],
-    [55.78, -4.25],
-    [55.92, -4.25],
-    [55.92, -4.6],
-    [55.85, -4.66],
-    [55.78, -4.65],
+    [58.5, -6.5],
+    [58.5, -1.5],
+    [54.0, -1.0],
+    [51.1, 1.4],
+    [50.9, -1.0],
+    [54.0, -5.5],
+    [58.5, -6.5],
   ],
 
   assets: {
-    hero: "/landscapingltdpaisley-hero.jpg",
-    logo: "/landscapingltdpaisley-logo.png",
-    about: "/landscapingltdpaisley-about.jpg",
+    hero: "/scotiasteel-hero.jpg",
+    logo: "/scotiasteel-logo.png",
+    about: "/scotiasteel-about.jpg",
     gallery: [
-      "/landscapingltdpaisley-gal-01.jpg",
-      "/landscapingltdpaisley-gal-02.jpg",
-      "/landscapingltdpaisley-gal-03.jpg",
-      "/landscapingltdpaisley-gal-04.jpg",
-      "/landscapingltdpaisley-gal-05.jpg",
-      "/landscapingltdpaisley-gal-06.jpg",
+      "/scotiasteel-gal-01.jpg",
+      "/scotiasteel-gal-02.jpg",
+      "/scotiasteel-gal-03.jpg",
+      "/scotiasteel-gal-04.jpg",
+      "/scotiasteel-gal-05.jpg",
+      "/scotiasteel-gal-06.jpg",
     ],
   },
 
   serviceTypes: [
-    "Grass cutting",
-    "Garden maintenance and tidy-ups",
-    "Hedge trimming",
-    "Weed control and de-weeding",
-    "Flat-pack furniture and shed assembly",
+    "Industrial steel buildings",
+    "Agricultural steel buildings",
+    "Workshop and garage steel buildings",
+    "Steel cladding installation",
+    "Aluminium roller doors and steel components",
     "Free quotes",
   ],
 
   openingHours: [
     {
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "08:00",
-      closes: "18:00",
+      closes: "17:00",
     },
   ],
 
@@ -145,20 +146,20 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Grass Cutting & Garden Maintenance in ${citiesLabel()}`;
+  `${business.alternateName} | Steel Buildings in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} provides grass cutting, hedge trimming and garden maintenance across ${citiesLabel()} and ${business.region}. Free quotes available.`,
+    `${business.alternateName} supplies and constructs industrial, agricultural and commercial steel buildings across ${citiesLabel()}. Free quotes available.`,
   );
 
-export const homepageH1 = () => `Grass Cutting & Garden Maintenance in ${citiesLabel()}`;
+export const homepageH1 = () => `Steel Buildings in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `grass cutting ${business.primaryCity}, garden maintenance ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `steel buildings ${business.primaryCity}, steel building construction ${business.secondaryCity}, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
-  `${business.alternateName} grass cutting and garden maintenance in ${citiesLabel()}`;
+  `${business.alternateName} steel building construction in ${citiesLabel()}`;
 
 export const schemaImages = (): string[] => [
   absoluteUrl(business.assets.logo),
