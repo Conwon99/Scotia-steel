@@ -54,56 +54,64 @@ export type BusinessConfig = {
 };
 
 export const business: BusinessConfig = {
-  businessName: "Your Business Name — Home Services",
-  alternateName: "Your Brand",
-  tagline: "Professional home services with tidy workmanship and free quotes.",
-  gbpCategory: "Home Services",
+  businessName: "Landscaping Ltd",
+  alternateName: "Landscaping Ltd",
+  tagline: "Reliable grass cutting, hedge trimming and garden maintenance with free, no-obligation quotes.",
+  gbpCategory: "Landscape Company",
 
-  phone: "+44 7000 000000",
-  phoneDisplay: "+44 7000 000000",
-  phoneLocal: "07000 000000",
-  trackingPhone: "+44 7000 000001",
-  trackingPhoneLocal: "07000 000001",
+  phone: "+44 7935 499327",
+  phoneDisplay: "+44 7935 499327",
+  phoneLocal: "07935 499327",
+  trackingPhone: null,
+  trackingPhoneLocal: null,
 
-  email: "hello@yourbusiness.co.uk",
-  siteUrl: "https://www.yourbusiness.co.uk",
-  facebookUrl: "https://www.facebook.com/yourbusiness",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Your+Business+Name",
-  whatsappUrl: null,
+  email: "hello@landscapingltd.co.uk",
+  siteUrl: "https://www.landscapingltdpaisley.co.uk",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61577154598414",
+  googleMapsUrl: "https://maps.google.com/maps?q=55.84197000%2C-4.42292000&hl=en",
+  whatsappUrl: "https://wa.me/447935499327",
 
-  primaryCity: "Primary City",
-  secondaryCity: "Secondary City",
-  region: "Your Region",
+  primaryCity: "Paisley",
+  secondaryCity: "Glasgow",
+  region: "Renfrewshire",
   geoRegion: "GB-SCT",
 
   address: {
-    addressLocality: "Primary City",
-    addressRegion: "Your Region",
+    addressLocality: "Paisley",
+    addressRegion: "Renfrewshire",
     addressCountry: "GB",
   },
 
-  mapCenter: [56.0, -3.5],
+  mapCenter: [55.84197, -4.42292],
   serviceAreaPolygon: [
-    [55.8, -4.0],
-    [55.8, -3.0],
-    [56.2, -2.8],
-    [56.4, -3.2],
-    [56.3, -3.9],
-    [55.8, -4.0],
+    [55.78, -4.65],
+    [55.78, -4.25],
+    [55.92, -4.25],
+    [55.92, -4.6],
+    [55.85, -4.66],
+    [55.78, -4.65],
   ],
 
   assets: {
-    hero: "/hero.jpg",
-    logo: "/logo.png",
-    about: "/about.jpg",
-    gallery: ["/gal_01.jpg", "/gal_02.jpg", "/gal_03.jpg", "/gal_04.jpg", "/gal_05.jpg", "/gal_06.jpg"],
+    hero: "/landscapingltdpaisley-hero.jpg",
+    logo: "/landscapingltdpaisley-logo.png",
+    about: "/landscapingltdpaisley-about.jpg",
+    gallery: [
+      "/landscapingltdpaisley-gal-01.jpg",
+      "/landscapingltdpaisley-gal-02.jpg",
+      "/landscapingltdpaisley-gal-03.jpg",
+      "/landscapingltdpaisley-gal-04.jpg",
+      "/landscapingltdpaisley-gal-05.jpg",
+      "/landscapingltdpaisley-gal-06.jpg",
+    ],
   },
 
   serviceTypes: [
-    "Primary service installation",
-    "Primary service repairs",
-    "Secondary service",
-    "Garden and outdoor improvements",
+    "Grass cutting",
+    "Garden maintenance and tidy-ups",
+    "Hedge trimming",
+    "Weed control and de-weeding",
+    "Flat-pack furniture and shed assembly",
     "Free quotes",
   ],
 
@@ -137,20 +145,20 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Home Services in ${citiesLabel()}`;
+  `${business.alternateName} | Grass Cutting & Garden Maintenance in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} provides professional home services across ${citiesLabel()} and ${business.region}. Free quotes available.`,
+    `${business.alternateName} provides grass cutting, hedge trimming and garden maintenance across ${citiesLabel()} and ${business.region}. Free quotes available.`,
   );
 
-export const homepageH1 = () => `Home Services in ${citiesLabel()}`;
+export const homepageH1 = () => `Grass Cutting & Garden Maintenance in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `home services ${business.primaryCity}, ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `grass cutting ${business.primaryCity}, garden maintenance ${business.secondaryCity}, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
-  `${business.alternateName} home services in ${citiesLabel()}`;
+  `${business.alternateName} grass cutting and garden maintenance in ${citiesLabel()}`;
 
 export const schemaImages = (): string[] => [
   absoluteUrl(business.assets.logo),
