@@ -95,7 +95,7 @@ export const business: BusinessConfig = {
 
   assets: {
     hero: "/scotiasteel-hero.jpg",
-    logo: "/scotiasteel-logo.png",
+    logo: "/scotiasteel-logo-v2.png",
     about: "/scotiasteel-about.jpg",
     gallery: [
       "/scotiasteel-gal-01.jpg",
