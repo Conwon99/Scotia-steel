@@ -11,19 +11,19 @@ const cities = citiesLabel();
 export const homepageFaqs: FaqItem[] = [
   {
     question: "Do you offer free quotes?",
-    answer: `Yes. Contact ${brand} by phone or message with details of your enquiry and we can discuss a free quote.`,
+    answer: `Yes. Contact ${brand} by phone, message or WhatsApp with details of your garden and we can discuss a free, no-obligation quote.`,
   },
   {
     question: "What areas do you cover?",
     answer: `${brand} serves ${cities} and surrounding areas in ${business.region}. If you are nearby, get in touch and we can confirm availability.`,
   },
   {
-    question: "How do I get started?",
-    answer: `Call ${brand} or use the contact form with a brief description of the work and your location. Photos are helpful.`,
+    question: "What services do you offer?",
+    answer: `${brand} offers grass cutting, hedge trimming, weed control and de-weeding, general garden maintenance, and flat-pack furniture and shed assembly.`,
   },
   {
-    question: "Do you handle outdoor and home service work?",
-    answer: `Yes. ${brand} handles a range of home and outdoor services with tidy workmanship and free quotes.`,
+    question: "How do I get started?",
+    answer: `Call ${brand}, pop us a message on Facebook or WhatsApp, or use the contact form with a brief description of the work and your location. Photos are helpful.`,
   },
 ];
 
