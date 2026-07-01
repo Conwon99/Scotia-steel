@@ -146,17 +146,17 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Steel Buildings in ${citiesLabel()}`;
+  `${business.alternateName} | Steel Building Suppliers & Contractors in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} supplies and constructs industrial, agricultural and commercial steel buildings across ${citiesLabel()}. Free quotes available.`,
+    `${business.alternateName} — steel building suppliers and contractors across ${citiesLabel()}. Industrial, agricultural and commercial builds. Free quotes.`,
   );
 
-export const homepageH1 = () => `Steel Buildings in ${citiesLabel()}`;
+export const homepageH1 = () => `Steel Building Suppliers & Contractors in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `steel buildings ${business.primaryCity}, steel building construction ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `steel buildings ${business.primaryCity}, steel building suppliers, steel building contractors ${business.secondaryCity}, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
   `${business.alternateName} steel building construction in ${citiesLabel()}`;
